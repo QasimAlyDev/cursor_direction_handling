@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cursor Direction Handling</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">  
+        <form id="contact" action="" method="post" onsubmit="event.preventDefault()">
+          <h3> Contact Form</h3>
+          <fieldset>
+            <input placeholder="Your name" type="text" tabindex="1" autofocus onblur="validate(this)">
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Email Address" type="email" tabindex="2" onblur="validate(this)">
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" onblur="validate(this)">
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Web Site (optional)" type="url" tabindex="4" onblur="validate(this)">
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+          </fieldset>
+        </form>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
